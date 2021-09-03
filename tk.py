@@ -1,3 +1,5 @@
+## from https://docs.python.org/3/library/tkinter.html
+
 import tkinter as tk
 
 class Application(tk.Frame):
