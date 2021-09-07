@@ -3,7 +3,12 @@
 ## write a while loop that allows users to enter an album's artist and title.
 ## Once you have that information, call make_album() with the user's input and
 ## print the dictionary that's created.  Be sure to include a quit value in the
-## while loop.  
+## while loop.
+
+## for Elliot:  Write a while loop that takes information from a function called plant_id(), give
+## it two parameters, species and genus of the plant and the common name too.  Make it up, that's okay
+## the while loop should take the input from the user, and then return a dictionary with the information
+## about the plant.  
 
 def build_person(first_name, last_name):
     person = {'first' : first_name.title(), 'last': last_name.title()}
