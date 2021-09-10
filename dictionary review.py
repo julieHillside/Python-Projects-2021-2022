@@ -9,4 +9,8 @@ print(alien_0['points'])
 # create a dictionary of your favorite foods and where you like to eat them.
 # the keys should be the location of where you get the food, and the values should
 # be the favorite food.  Then print out each value in your dictionary by using the
-# key to call that value.  
+# key to call that value.
+
+for k, v in alien_0.items():
+    print("key: ", k)
+    print("value: ", v)

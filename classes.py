@@ -1,9 +1,15 @@
 ## understanding classes from Crash Course Python
 
-"""Make a class called Restaurant.  The __init__() methodfor Restaurant should have two attributes
-a restaurant_name, and a cuisine_type Make a method called describe_restaurant() that prints these two pieces of info
-and a method called open_restaurant() that prints a message indicating the restaurant is open.
-Make an instance called restaurant from your class.  Print the two attributes individually, then call both """
+"""Make a class called Restaurant.  The __init__() methodfor Restaurant should have
+two attributes
+a restaurant_name, and a cuisine_type Make a method called describe_restaurant()
+that prints these
+two pieces of info
+and a method called open_restaurant() that prints a message indicating the restaurant
+is open.
+Make an instance called restaurant from your class.  Print the two attributes
+individually, then
+call both """
 
 class Dog:
     """a simple attempt to model a dog"""
@@ -30,8 +36,9 @@ def print_dog(instance):
     instance.sit()
     instance.roll_over()
         
-print_dog(my_dog)
-print_dog(your_dog)
+# print_dog(my_dog)
+# print_dog(your_dog)
 
+third_dog = Dog("Piper", 17)
+print_dog(third_dog)
 
-methods"""
