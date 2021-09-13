@@ -1,0 +1,14 @@
+# on a mac open a terminal
+
+python3 -m pip install --user pygame
+
+# on windows go into the Thonny IDE,
+# push ctrl+t
+
+py --version
+py -m pip --version
+py -m pip install --user pygame
+
+# find the python.exe path and put it into
+# Thonny
+py -m --version

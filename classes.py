@@ -11,6 +11,8 @@ Make an instance called restaurant from your class.  Print the two attributes
 individually, then
 call both """
 
+
+
 class Dog:
     """a simple attempt to model a dog"""
     def __init__(self, name, age):
@@ -27,18 +29,21 @@ class Dog:
         print(self.name + " rolled over")
         
 my_dog = Dog('Willie', 6)
+my_dog.roll_over()
+'''Start with your class you just made, create 3 different instances of your class and call
+describe_restaurant() for each instance'''
 your_dog = Dog("fluffy", 3)
 
-def print_dog(instance):
-    print("My dog's name is " + instance.name)
-    print("My dog is " + str(instance.age) + " years old")
-
-    instance.sit()
-    instance.roll_over()
-        
-# print_dog(my_dog)
-# print_dog(your_dog)
-
-third_dog = Dog("Piper", 17)
-print_dog(third_dog)
+# def print_dog(instance):
+#     print("My dog's name is " + instance.name)
+#     print("My dog is " + str(instance.age) + " years old")
+# 
+#     instance.sit()
+#     instance.roll_over()
+#         
+# # print_dog(my_dog)
+# # print_dog(your_dog)
+# 
+# third_dog = Dog("Piper", 17)
+# print_dog(third_dog)
 
