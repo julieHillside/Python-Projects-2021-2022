@@ -2,6 +2,8 @@
 
 python3 -m pip install --user pygame
 
+python3 -m --version
+
 # on windows go into the Thonny IDE,
 # push ctrl+t
 
