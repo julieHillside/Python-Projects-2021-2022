@@ -73,6 +73,12 @@ class AlienInvasion:
             self.ship.update()
             self.bullets.update()
             self._update_screen()
+            
+            # deletes bullets that go off the screen
+            for bullet in self.bullets.copy():
+                if bullet.rect.bottom <= 0:
+                    self.bullets.remove(bullet)
+#             print(len(self.bullets))
 
 if __name__ == '__main__':
     # Make a game instance, and run the game.
