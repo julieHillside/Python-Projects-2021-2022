@@ -23,6 +23,19 @@ class AlienInvasion:
         
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
+        
+    def _update_bullets(self):
+        '''update position of bullets and get rid of old bullets.'''
+        #update bullet positions
+        self.bullets.update()
+        
+        # deletes bullets that go off the screen
+        for bullet in self.bullets.copy():
+            if bullet.rect.bottom <= 0:
+                self.bullets.remove(bullet)
+#             print(len(self.bullets))
+        
+        
     
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
@@ -72,14 +85,10 @@ class AlienInvasion:
         while True:
             self._check_events()
             self.ship.update()
-            self.bullets.update()
+            self._update_bullets()
             self._update_screen()
             
-            # deletes bullets that go off the screen
-            for bullet in self.bullets.copy():
-                if bullet.rect.bottom <= 0:
-                    self.bullets.remove(bullet)
-#             print(len(self.bullets))
+
 
 if __name__ == '__main__':
     # Make a game instance, and run the game.
