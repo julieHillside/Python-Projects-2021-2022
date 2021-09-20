@@ -29,21 +29,26 @@ class AlienInvasion:
         
         self._create_fleet()
     
+
+    def _create_alien(self, alien_number):
+        '''create an alien and place it in a'''
+        alien = Alien(self)
+        alien_width = alien.rect.width
+        alien.x = alien_width +2*alien_width * alien_number
+        alien.rect.x = alien.x
+        self.aliens.add(alien)
+        
+       
+    
     def _create_fleet(self):
-        '''Create a fleet of aliens'''
-        #Make an alien
         alien = Alien(self)
         alien_width = alien.rect.width
         available_space_x = self.settings.screen_width - (2*alien_width)
         number_aliens_x = available_space_x // (2*alien_width)
-        
         #Create the first row of aliens
         for alien_number in range(number_aliens_x):
             #create an alien and place it in the row.
-            alien = Alien(self)
-            alien.x = alien_width + 2 * alien_width * alien_number
-            alien.rect.x = alien.x
-            self.aliens.add(alien)
+            self._create_alien(alien_number)
     
     def _update_bullets(self):
         '''update position of bullets and get rid of old bullets.'''
