@@ -14,3 +14,17 @@ py -m pip install --user pygame
 # find the python.exe path and put it into
 # Thonny
 py -m --version
+
+
+talking about how to divide up screen for aliens
+
+5//2 = 2
+
+
+
+available space x direction = setting.screen_width - (2*alien_width)
+
+number of aliens in x direction = available space // (2*alien_width)
+
+
+
